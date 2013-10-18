@@ -1,0 +1,18 @@
+.b-search-page__serp
+{
+    width: 30%;
+    position: absolute;
+}
+
+.b-search-page__serp .b-serp
+{
+    margin-right: 0;
+}
+
+
+.b-search-page__docs
+{
+    width: 70%;
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,16 @@
+.b-head
+{
+    background: white;
+    /*border-bottom: 1px solid grey;*/
+    line-height: 5em;
+    height: 5em;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+}
+
+.b-head__input
+{
+    font-size: 1.5em;
+    margin-left: 1em;
+    padding: 0.1em;
+    width: 30%;
+}

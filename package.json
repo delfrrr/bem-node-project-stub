@@ -8,7 +8,8 @@
     "dependencies": {
         "bem-node": "git+ssh://git@github.com:wtfil/bem-node.git#simple-bem",
         "enb": "0.8.36",
-        "enb-bemhtml": "0.1.1"
+        "enb-bemhtml": "0.1.1",
+        "JSONPath" : "0.9.1"
     },
     "engines": {
         "node": ">= 0.8.0"

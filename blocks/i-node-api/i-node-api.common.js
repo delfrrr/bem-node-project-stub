@@ -1,0 +1,1 @@
+BN.addDeclFor('ajax', 'i-node-api');

@@ -3,7 +3,8 @@ BN.addDecl('b-head').matchBlock(function (ctx) {
         {
             block: 'b-input',
             mix: {block: this._name, elem: 'input'},
-            name: 'q'
+            name: 'q',
+            value: BN('i-router').get('params').q || ''
         }
     ]);
 });

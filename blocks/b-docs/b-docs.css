@@ -1,0 +1,47 @@
+.b-docs h2
+{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.b-docs h3
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.b-docs h4
+{
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+
+.b-docs > *
+{
+    margin: 1em 0;
+    display: block;
+}
+
+
+ul li
+{
+    margin: 0.5em 0;
+}
+ul {
+    list-style: disc;
+    padding-left: 1em;
+}
+
+.b-docs p code
+{
+    font-family: 'Monaco', monospace;
+    background: #f6f5f3;
+    border: 1px solid #dddcda;
+}
+.b-docs pre
+{
+    font-family: 'Monaco', monospace;
+    background: #f6f5f3;
+    padding: 1em;
+    border-left: 0.5em solid #dddcda;
+}

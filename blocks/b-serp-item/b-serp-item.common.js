@@ -1,4 +1,4 @@
-BN.addDecl('b-serp-item').matchBlock(function (ctx) {
+BN.addDecl('b-serp-item').blockTemplate(function (ctx) {
     var json = ctx.json();
     ctx.mix({block: 'island', elem: 'item'}).content({
         block: 'b-link',

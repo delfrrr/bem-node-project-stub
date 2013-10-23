@@ -1,4 +1,4 @@
-BN.addDecl('b-head').matchBlock(function (ctx) {
+BN.addDecl('b-head').blockTemplate(function (ctx) {
     ctx.tag('form').attr('method', '').content([
         {
             block: 'b-input',

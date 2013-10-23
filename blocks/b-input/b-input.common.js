@@ -1,4 +1,4 @@
-BN.addDecl('b-input').matchBlock(function (ctx) {
+BN.addDecl('b-input').blockTemplate(function (ctx) {
     var json = ctx.json();
     ctx
         .tag('input')

@@ -1,4 +1,4 @@
-BN.addDecl('b-search-page').matchBlock(function (ctx) {
+BN.addDecl('b-search-page').blockTemplate(function (ctx) {
     var json = ctx.json();
     ctx.js(true).content([
         {elem: 'serp', content: {
@@ -20,7 +20,7 @@ BN.addDecl('b-search-page').matchBlock(function (ctx) {
             section: json.section
         }}
     ]);
-}).setBlockData(function (ctx) {
+}).dataTemplate(function (ctx) {
     // var q = BN('i-router').get('params.q');
     return BN('i-node-api').get('index').then(function (index) {
         ctx.param('index', index);

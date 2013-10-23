@@ -1,8 +1,8 @@
-BN.addDecl('b-docs').matchBlock(function (ctx) {
+BN.addDecl('b-docs').blockTemplate(function (ctx) {
     ctx.mix([{block: 'island'}]).content(
         this._convertDocToBemjson(ctx.json().docs)
     );
-}).setBlockData(function (ctx) {
+}).dataTemplate(function (ctx) {
     var json = ctx.json();
     return BN('i-node-api').get(json.section).then(function (docs) {
         ctx.param('docs', docs);

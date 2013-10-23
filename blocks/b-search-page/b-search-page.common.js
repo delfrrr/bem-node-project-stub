@@ -33,12 +33,8 @@ BN.addDecl('b-search-page').matchBlock(function (ctx) {
             block: 'b-docs',
             section: section
         }).then(function (html) {
-            BEM.DOM.replace(_this._instance.findBlockInside('b-docs').domElem, html);
+            BEM.DOM.replace(_this.__lastInstance.findBlockInside('b-docs').domElem, html);
             jQuery(window).scrollTop(0);
         });
-    }
-}).onSetMod({
-    'js': function () {
-        this.__self._instance = this;
     }
 });

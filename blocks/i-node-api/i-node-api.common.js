@@ -1,1 +1,1 @@
-BN.addDeclFor('ajax', 'i-node-api');
+BN.addDecl('i-node-api', 'ajax');

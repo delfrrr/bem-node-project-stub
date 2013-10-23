@@ -9,6 +9,7 @@ BN.addDecl('b-docs').matchBlock(function (ctx) {
         return Vow.fulfill();
     }, function (err) {
         BN('i-response').error(err);
+        return Vow.reject(err);
     });
 }).staticProp({
     _convertDocToBemjson: function (docObj, bemjsonAr, headerLevel) {
@@ -19,7 +20,9 @@ BN.addDecl('b-docs').matchBlock(function (ctx) {
             var docObjItem = docObj[docKey];
             if (Array.isArray(docObjItem)) {
                 docObjItem.forEach(function (item) {
-                    _this._convertDocToBemjson(item, bemjsonAr, headerLevel < 3 ? headerLevel + 1 : 4);
+                    if (typeof item === 'object') {
+                        _this._convertDocToBemjson(item, bemjsonAr, headerLevel < 3 ? headerLevel + 1 : 4);
+                    }
                 });
             }
             if (docKey === 'textRaw') {

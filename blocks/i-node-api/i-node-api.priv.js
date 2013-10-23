@@ -1,4 +1,4 @@
-BN.addDeclFor('ajax', 'i-node-api', {
+BN.addDecl('i-node-api', 'ajax', {
     apiHost: 'http://nodejs.org/api/'
 }).staticProp({
     _request: function (method, resource, data) {

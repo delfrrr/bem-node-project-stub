@@ -1,4 +1,4 @@
-BN.addDeclFor('page', 'i-search-page', {
+BN.addDecl('i-search-page', 'page', {
     route: /^\/(\w+)?/
 }).staticProp({
     init: function (matches) {
